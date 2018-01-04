@@ -25,16 +25,16 @@
       </select>
       <br><br>
 
-      <div class="alert" role="alert">
+      <div class="alert" role="alert" [class.alert-success]="classe.value == 'alert-success'">
         <strong>Well done!</strong> You successfully read this important alert message.
       </div>
-      <div class="alert" role="alert">
+      <div class="alert" role="alert" [class.alert-info]="classe.value == 'alert-info'">
         <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
       </div>
-      <div class="alert" role="alert">
+      <div class="alert" role="alert" [class.alert-warning]="classe.value == 'alert-warning'">
         <strong>Warning!</strong> Better check yourself, you're not looking too good.
       </div>
-      <div class="alert" role="alert">
+      <div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'">
         <strong>Oh snap!</strong> Change a few things up and try submitting again.
       </div>
     </div>
