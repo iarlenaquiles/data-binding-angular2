@@ -13,7 +13,7 @@
     <img bind-src="urlImagem">
   </article>-->
 
-  <article>
+  <!--<article>
     <h3>Class e Style Binding</h3>
     <div>
       Selecione uma classe:
@@ -45,6 +45,16 @@
       <div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'">
         <strong>Oh snap!</strong> Change a few things up and try submitting again.
       </div>
+    </div>
+  </article>
+</section>-->
+
+<section class="event-binding">
+  <article>
+    <h3>Event Binding</h3>
+
+    <div>
+      <button (click)="botaoClicado()" class="btn btn-primary">Me clique</button>
     </div>
   </article>
 </section>

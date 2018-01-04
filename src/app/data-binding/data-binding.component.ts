@@ -18,6 +18,10 @@ export class DataBindingComponent implements OnInit {
   getCurtirCurso(){
     return true;
   }
+
+  botaoClicado(){
+    alert('Botao clicado');
+  }
   constructor() {
 
    }
