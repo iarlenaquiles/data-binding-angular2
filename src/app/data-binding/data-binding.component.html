@@ -15,5 +15,28 @@
 
   <article>
     <h3>Class e Style Binding</h3>
+    <div>
+      Selecione uma classe:
+      <select #classe (change)="0">
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Alerta</option>
+        <option value="alert-danger">Erro</option>
+      </select>
+      <br><br>
+
+      <div class="alert" role="alert">
+        <strong>Well done!</strong> You successfully read this important alert message.
+      </div>
+      <div class="alert" role="alert">
+        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+      </div>
+      <div class="alert" role="alert">
+        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+      </div>
+      <div class="alert" role="alert">
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+      </div>
+    </div>
   </article>
 </section>
