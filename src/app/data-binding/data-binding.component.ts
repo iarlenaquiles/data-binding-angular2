@@ -11,6 +11,8 @@ export class DataBindingComponent implements OnInit {
   urlImagem = 'http://lorempixel.com/400/200/nature/';
   cursoAngular: boolean = true;
   valorAtual: string = '';
+  valorSalvo: string = '';
+
   getValor(){
     return 1;
   }
@@ -25,6 +27,10 @@ export class DataBindingComponent implements OnInit {
 
   onKeyUp(evento:KeyboardEvent){
     this.valorAtual = (<HTMLInputElement>evento.target).value; 
+  }
+
+  salvarValor(valor){
+    this.valorSalvo = valor;
   }
   constructor() {
 
