@@ -25,6 +25,14 @@
       </select>
       <br><br>
 
+      <div class="alert {{ classe.value }}" role="alert">
+        Texto colorido conforme a cor do combobox
+      </div>
+
+      <div class="alert alert-danger" role="alert" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
+        Esse texto somente aparece em caso de erro
+      </div>
+
       <div class="alert" role="alert" [class.alert-success]="classe.value == 'alert-success'">
         <strong>Well done!</strong> You successfully read this important alert message.
       </div>
