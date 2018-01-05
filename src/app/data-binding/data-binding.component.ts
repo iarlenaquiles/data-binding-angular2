@@ -49,6 +49,10 @@ export class DataBindingComponent implements OnInit {
   mouseOut(){
     this.isMouseOver = !this.isMouseOver;
   }
+
+  onMudouValor(evento){
+    console.log(evento);
+  }
   constructor() {
 
    }
