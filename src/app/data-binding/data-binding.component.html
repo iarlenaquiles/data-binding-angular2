@@ -77,12 +77,14 @@
       <input type="text" 
       [value]="nome"
       (input)="nome = $event.target.value"
-      >
+      />
 
-      <input type="text" 
+      <!-- <input type="text" 
       [ngModel]="nome"
       (ngModelChange)="nome = $event"
-      >
+      /> -->
+
+      <input type="text" [(ngModel)]="nome" />
 
       <p>Você digitou: {{ nome }}</p>
     </div>
