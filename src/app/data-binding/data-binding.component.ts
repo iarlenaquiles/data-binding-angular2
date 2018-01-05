@@ -12,7 +12,9 @@ export class DataBindingComponent implements OnInit {
   cursoAngular: boolean = true;
   valorAtual: string = '';
   valorSalvo: string = '';
-
+  isMouseOver: boolean = false;
+  isMouseOut: boolean = false;
+  
   getValor(){
     return 1;
   }
@@ -34,11 +36,11 @@ export class DataBindingComponent implements OnInit {
   }
 
   mouseOver(){
-    alert("Over");
+    return this.isMouseOver = true;
   }
 
   mouseOut(){
-    alert("Out");
+    this.isMouseOver = false;
   }
   constructor() {
 
