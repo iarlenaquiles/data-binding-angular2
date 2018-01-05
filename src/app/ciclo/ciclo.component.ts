@@ -7,9 +7,44 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CicloComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    this.log('constructor');
+   }
 
   ngOnInit() {
+    this.log('ngOnInit');
+  }
+
+  ngOnChanges() {
+    this.log('ngOnChanges');
+  }
+
+  ngDoCheck(){
+    this.log('ngDoCheck');
+  }
+
+  ngOnDestroy(){
+    this.log('ngOnDestroy');
+  }
+
+  ngAfterContentInit(){
+    this.log('ngAfterContentInit');
+  }
+
+  ngAfterContentChecked(){
+    this.log('ngAfterContentChecked');
+  }
+
+  ngAfterViewChecked(){
+    this.log('ngAfterViewChecked');
+  }
+
+  ngAfterViewInit(){
+    this.log('ngAfterViewInit');
+  }
+
+  private log(hook: string){
+    console.log(hook);
   }
 
 }
