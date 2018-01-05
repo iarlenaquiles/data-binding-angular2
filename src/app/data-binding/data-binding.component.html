@@ -65,7 +65,7 @@
     <p>Valor Salvo: {{ valorSalvo }}</p>
     <br>
 
-    <span (mouseover)="mouseOver()" (mouseout)="mouseOut()">Passe o mouse sobre mim</span>
+    <span (mouseover)="mouseOver()" (mouseout)="mouseOut()" [class.highlight]="isMouseOver">Passe o mouse sobre mim</span>
     <p>MouseOver: {{ isMouseOver }}</p>
   </article>
 </section>
