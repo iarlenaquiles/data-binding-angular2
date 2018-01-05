@@ -32,6 +32,14 @@ export class DataBindingComponent implements OnInit {
   salvarValor(valor){
     this.valorSalvo = valor;
   }
+
+  mouseOver(){
+    alert("Over");
+  }
+
+  mouseOut(){
+    alert("Out");
+  }
   constructor() {
 
    }
