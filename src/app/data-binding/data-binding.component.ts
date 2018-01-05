@@ -14,6 +14,7 @@ export class DataBindingComponent implements OnInit {
   valorSalvo: string = '';
   isMouseOver: boolean = false;
   isMouseOut: boolean = false;
+  nome: string = 'abc';
   
   getValor(){
     return 1;

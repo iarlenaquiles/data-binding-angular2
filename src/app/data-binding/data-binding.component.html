@@ -49,7 +49,7 @@
   </article>
 </section>-->
 
-<section class="event-binding">
+<!--<section class="event-binding">
   <article>
     <h3>Event Binding</h3>
 
@@ -67,5 +67,24 @@
 
     <span (mouseover)="mouseOver()" (mouseout)="mouseOut()" [class.highlight]="isMouseOver">Passe o mouse sobre mim</span>
     <p>MouseOver: {{ isMouseOver }}</p>
+  </article>
+</section>-->
+
+<section>
+  <article>
+    <h3>Two-way data binding</h3>
+    <div>
+      <input type="text" 
+      [value]="nome"
+      (input)="nome = $event.target.value"
+      >
+
+      <input type="text" 
+      [ngModel]="nome"
+      (ngModelChange)="nome = $event"
+      >
+
+      <p>Você digitou: {{ nome }}</p>
+    </div>
   </article>
 </section>
