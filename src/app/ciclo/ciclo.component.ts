@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { OnChanges, DoCheck, AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, OnDestroy } from '@angular/core/src/metadata/lifecycle_hooks';
 
 @Component({
@@ -7,6 +7,8 @@ import { OnChanges, DoCheck, AfterContentChecked, AfterContentInit, AfterViewChe
   styleUrls: ['./ciclo.component.css']
 })
 export class CicloComponent implements OnInit, OnChanges, DoCheck, AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, OnDestroy {
+
+  @Input() valorInicial: number = 10;
 
   constructor() {
     this.log('constructor');
